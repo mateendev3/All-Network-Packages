@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cherry_pie"
+    tools:context=".activity.MasterDetailActivity">
+
+    <TextView
+        android:id="@+id/tv_package_master_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:paddingHorizontal="8dp"
+        android:text="Work From Home Bundle"
+        android:gravity="center"
+        android:textColor="@color/ufone_orange"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_on_net"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/master_left_side"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        android:paddingStart="16dp"
+        android:paddingVertical="6dp"
+        android:paddingEnd="24dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_package_master_title">
+
+        <TextView
+            android:id="@+id/tv_on_net"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="On-Net  |  200"
+            android:textColor="@color/cherry_pie"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_off_net"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/master_left_side"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        android:paddingStart="16dp"
+        android:paddingVertical="6dp"
+        android:paddingEnd="24dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_on_net">
+
+        <TextView
+            android:id="@+id/tv_off_net"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Off-Net  |  200"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/cherry_pie"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/master_left_side"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        android:paddingStart="16dp"
+        android:paddingVertical="6dp"
+        android:paddingEnd="24dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_off_net">
+
+        <TextView
+            android:id="@+id/tv_sms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMS  |  1000"
+            android:textColor="@color/cherry_pie"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/master_left_side"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        android:paddingStart="16dp"
+        android:paddingVertical="6dp"
+        android:paddingEnd="24dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_sms">
+
+        <TextView
+            android:id="@+id/tv_internet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Internet  |  1GB"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/cherry_pie"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_validity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/master_left_side"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        android:paddingStart="16dp"
+        android:paddingVertical="6dp"
+        android:paddingEnd="24dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_internet">
+
+        <TextView
+            android:id="@+id/tv_validity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Validity  |  1 Day"
+            android:textColor="@color/cherry_pie"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/master_left_side"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        android:paddingStart="16dp"
+        android:paddingVertical="6dp"
+        android:paddingEnd="24dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_validity">
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price  |  Rs. 15/-"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/cherry_pie"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/master_left_side"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        android:paddingStart="16dp"
+        android:paddingVertical="6dp"
+        android:paddingEnd="24dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_price">
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Code  |  *345*179#"
+            android:textColor="@color/cherry_pie"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <Button
+        android:id="@+id/btn_activate_package"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/ufone_orange"
+        android:padding="8dp"
+        android:text="Activate"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="1000dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Enjoy Facebook, WhatsApp And Youtube whole day"
+        android:textColor="@color/white"
+        android:paddingStart="8dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_code" />
+
+    <ImageView
+        android:id="@+id/iv_share"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_activate_package"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_activate_package"
+        app:srcCompat="@drawable/ic_share2" />
+
+    <ImageView
+        android:id="@+id/iv_favorite"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_activate_package"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/btn_activate_package"
+        app:srcCompat="@drawable/ic_favorite" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

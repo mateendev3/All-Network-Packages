@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">All Network Packages</string>
+    <string name="ptcl_packages">PTCL Packages</string>
+    <string name="zong_packages">Zong Packages</string>
+    <string name="ufone_packages">Ufone Packages</string>
+    <string name="telenor_packages">Telenor Packages</string>
+    <string name="jazz_warid_packages">Jazz + Warid Packages</string>
+    <string name="package_details">Package Details</string>
+    <string name="open_nav_drawer">Open Navigation Drawer</string>
+    <string name="close_nav_drawer">Close Navigation Drawer</string>
+</resources>

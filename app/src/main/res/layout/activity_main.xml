@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alice_blue"
+    tools:context=".activity.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ToolBarTheme"
+        app:popupTheme="@style/ToolBarPopup"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_open_telenor_packages"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:background="@drawable/package_telenor_bg"
+        android:clickable="true"
+        android:elevation="3dp"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/ll_open_jazz_warid_packages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <ImageView
+            android:id="@+id/iv_btn_call"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="4dp"
+            app:srcCompat="@drawable/telenor_main" />
+
+        <TextView
+            android:id="@+id/tv_btn_call"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Telenor"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:srcCompat="@drawable/ic_arrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_open_ufone_packages"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:background="@drawable/package_ufone_bg"
+        android:clickable="true"
+        android:elevation="3dp"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/ll_open_zong_packages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_open_jazz_warid_packages">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="4dp"
+            app:srcCompat="@drawable/ufone_main" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Ufone"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:srcCompat="@drawable/ic_arrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_open_jazz_warid_packages"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:background="@drawable/package_jazz_warid_bg"
+        android:clickable="true"
+        android:elevation="3dp"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/ll_open_ufone_packages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_open_telenor_packages">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="4dp"
+            app:srcCompat="@drawable/jazz_warid_main" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Jazz + Warid"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:srcCompat="@drawable/ic_arrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_open_zong_packages"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:background="@drawable/package_zong_bg"
+        android:clickable="true"
+        android:elevation="3dp"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/ll_open_ptcl_packages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_open_ufone_packages">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="4dp"
+            app:srcCompat="@drawable/zong_main" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Zong"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:srcCompat="@drawable/ic_arrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_open_ptcl_packages"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:background="@drawable/package_ptcl_bg"
+        android:clickable="true"
+        android:elevation="3dp"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_open_zong_packages">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="4dp"
+            app:srcCompat="@drawable/ptcl_main" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="PTCL"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:srcCompat="@drawable/ic_arrow" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/main_hero_bg"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="All Network Sims Packages"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/ll_open_telenor_packages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_tool_bar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

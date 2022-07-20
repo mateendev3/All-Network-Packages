@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gmail.mateendev3.allnetworkpackages">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AllNetworkPackages">
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:theme="@style/Theme.AllNetworkPackages.SplashScreen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.FavoritePackagesActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.MasterDetailActivity"
+            android:exported="false"
+            android:label="@string/package_details" />
+        <activity
+            android:name=".activity.ShowPackagesActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.PTCLActivity"
+            android:exported="false"
+            android:label="@string/ptcl_packages"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/PTCLTheme" />
+        <activity
+            android:name=".activity.ZongActivity"
+            android:exported="false"
+            android:label="@string/zong_packages"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/ZongTheme" />
+        <activity
+            android:name=".activity.UfoneActivity"
+            android:exported="false"
+            android:label="@string/ufone_packages"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/UfoneTheme" />
+        <activity
+            android:name=".activity.JazzWaridActivity"
+            android:exported="false"
+            android:label="@string/jazz_warid_packages"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/JazzWaridTheme" />
+        <activity
+            android:name=".activity.TelenorActivity"
+            android:exported="false"
+            android:label="@string/telenor_packages"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/TelenorTheme" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true"
+            android:theme="@style/MainActivityTheme"/>
+    </application>
+
+</manifest>

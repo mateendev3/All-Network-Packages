@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_item_share"
+        android:title="Share This App"
+        android:icon="@drawable/ic_share"/>
+
+    <item
+        android:id="@+id/nav_item_support_us"
+        android:title="Support Us"
+        android:icon="@drawable/ic_star"/>
+
+    <item
+        android:id="@+id/nav_item_about"
+        android:title="About"
+        android:icon="@drawable/ic_about"/>
+
+    <item
+        android:id="@+id/nav_item_exit"
+        android:title="Exit"
+        android:icon="@drawable/ic_exit"/>
+</menu>

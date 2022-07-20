@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_root_layout"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_root_child"
+        android:layout_width="match_parent"
+        android:background="@color/ufone_backgroud"
+        android:padding="8dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/gl_at_30"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_package_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Special Daily 3G"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_package_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs. 6/-"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/ufone_orange"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_package_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="550 MB"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/ufone_orange"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/btn_more_detatils"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="More Details"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/package_image_bg"
+            android:padding="12dp"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toStartOf="@id/gl_at_30"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_package_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ufone_logo" />
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_at_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
